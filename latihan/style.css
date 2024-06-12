@@ -1,0 +1,308 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lora", sans-serif;
+    background-color: rgba(250, 235, 215, 0.53);
+}
+
+/* Navbar */
+nav {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+nav ul li {
+    color: black;
+    padding: 12px 16px;
+    display: inline-block;
+    font-size: larger;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:any-link{
+    color: black;
+}
+
+nav ul li a:hover {
+    color: grey;
+}
+
+header .jumbotron {
+    width: 100%;
+    background-image: url("images/jumbotron.jpg");
+    max-width: fit-content;
+    margin: auto;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .jumbotron .images-jumbotron {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+header .jumbotron .images-jumbotron img {
+    margin: auto;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    border-radius: 10px;
+    font-weight: normal;
+}
+
+.button-navbar:hover{
+    border: 0.5px solid #4CAF50;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* About-Us */
+
+article aside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+article .heading-about {
+    text-align: center;
+    margin-top: 40px;
+}
+
+article .about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+article .about-img img {
+    border-radius: 10px;
+    width: 80%;
+}
+
+article .content-about {
+    text-align: justify;
+    width: 50%;
+}
+
+/* Shop */
+.shop .trip-item-shop{  
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.trip-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.301);
+    margin-bottom: 20px;
+    width: 30%;
+}
+
+.trip-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.trip-content {
+    padding: 20px;
+}
+
+.shop .heading-shop {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Testimonial */
+.testimonial aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.heading-testimonial {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.testimoni-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin: 30px;
+    padding: 15px;
+    text-align: center;
+}
+
+.testimoni-content img {
+    width: 150px;
+    height: 150px;
+    border-radius:100%;
+}
+
+.testimoni-body p {
+    font-style: italic;
+    font-size: 15px;
+}
+
+/* Contact */
+.container-contact {
+    background-image: url("https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");    
+    background-size: cover;
+    width: auto;
+    height: 550px;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.382);
+    padding: 50px;
+    border-radius: 10px;
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.028);
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+
+/* Footer */
+footer {
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+button#scrollToTopBtn {
+    font-family: "Lora", sans-serif;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    background-color: #4CAF50;
+    border: 0.5px solid #4CAF50;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+button#scrollToTopBtn:hover {
+    background-color: rgba(255, 255, 255, 0.432);
+    border: 0.5px solid #4CAF50;
+    color: black;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    header .jumbotron {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about aside {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article .content-about {
+        text-align: justify;
+        width: 80%;
+    }
+
+    .shop .trip-item-shop {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .trip-item {
+        width: 80%;
+    }
+
+    .testimonial aside {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .testimonial .testimoni-content {
+        width: 60%;
+    }
+
+    .container-contact {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+}
